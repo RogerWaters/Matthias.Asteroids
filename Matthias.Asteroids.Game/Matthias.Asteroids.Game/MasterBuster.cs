@@ -8,20 +8,22 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Matthias.Asteroids.Engine;
 
 namespace Matthias.Asteroids.Game
 {
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Game1 : Microsoft.Xna.Framework.Game
+    public class MasterBuster : Microsoft.Xna.Framework.Game
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        GraphicsDeviceManager _grafikVerwaltung;
+        SpriteBatch _blattPapier;
+        private Spielbereich _spielBereich;
 
-        public Game1()
+        public MasterBuster()
         {
-            graphics = new GraphicsDeviceManager(this);
+            _grafikVerwaltung = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
 
@@ -45,19 +47,16 @@ namespace Matthias.Asteroids.Game
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            _blattPapier = new SpriteBatch(GraphicsDevice);
+            InhaltsVerwaltung.LadeContent(Content);
+            _spielBereich = new Spielbereich(GraphicsDevice);
+            _spielBereich.BeinhaltetBonis.Add(new Schild(new Rectangle(200,300,40,40)));
+            _spielBereich.BeinhaltetBonis.Add(new SchussUpgrade(new Rectangle(400,200,40,40)));
+            _spielBereich.BeinhaltetSpieler.Add(new Spieler(_spielBereich));
             // TODO: use this.Content to load your game content here
         }
 
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// all content.
-        /// </summary>
-        protected override void UnloadContent()
-        {
-            // TODO: Unload any non ContentManager content here
-        }
+       
 
         /// <summary>
         /// Allows the game to run logic such as updating the world,
@@ -70,6 +69,7 @@ namespace Matthias.Asteroids.Game
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
+            _spielBereich.Aktualisieren(gameTime);
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -82,9 +82,12 @@ namespace Matthias.Asteroids.Game
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            
+            _blattPapier.Begin();
 
-            // TODO: Add your drawing code here
+            _spielBereich.Zeichnen(_blattPapier);
 
+            _blattPapier.End();
             base.Draw(gameTime);
         }
     }

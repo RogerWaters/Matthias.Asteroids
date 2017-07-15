@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Matthias.Asteroids.Engine.Planet">
+    <Position X="0.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>iAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Planet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Matthias.Asteroids.Engine.Ufo">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ufo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Matthias.Asteroids.Engine.Schuss">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAIBAAAAAAAAAAAAA=</HashCode>
+      <FileName>Schuss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Matthias.Asteroids.Engine.SpielElement">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAEAAAAAIAAgAACAAAAIAAgACAAAAAAAAA=</HashCode>
+      <FileName>SpielElement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Matthias.Asteroids.Engine.Raumschiff">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAEAAAIAAAAEAAEAAAAAAAAAIQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Raumschiff.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Matthias.Asteroids.Engine.Boni">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAQAAAAACAEBCAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Boni.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Matthias.Asteroids.Engine.Schild">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Schild.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Matthias.Asteroids.Engine.SchussUpgrade">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SchussUpgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Matthias.Asteroids.Engine.Spieler">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAQAAAAgCAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Spieler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Matthias.Asteroids.Engine.Spielbereich">
+    <Position X="7" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAEAAACAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Spielbereich.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Matthias.Asteroids.Engine.IchHabeEineKanone" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IchHabeEineKanone.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Matthias.Asteroids.Engine.IchKannGezeichnetWerden" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IchKannGezeichnetWerden.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Matthias.Asteroids.Engine.BoniSpeicher" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BoniSpeicher.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
